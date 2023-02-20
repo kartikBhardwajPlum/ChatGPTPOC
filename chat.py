@@ -8,12 +8,12 @@ def api_call(query):
     return response.json()
 
 def main():
-    st.title("CHAT GPT POC")
+    st.title("PIKU x GPT ")
     query = st.text_input("Enter a question regarding your plum policy and benefits")
     submit = st.button("Submit")
     if submit:
         result = api_call(query)
-        st.write("Result:", result['choices'][0]['text'])
+        st.write("Result:", result['answer']+ "\n Tokens used:"+ str(result['tokens']))
 
 if __name__ == '__main__':
     main()
