@@ -13,7 +13,8 @@ def main():
     submit = st.button("Submit")
     if submit:
         result = api_call(query)
-        st.write("Result:", result['answer']+ "\n Tokens used:"+ str(result['tokens']))
+        st.write("Tokens used:"+ str(result['tokens']))
+        st.markdown(result['answer'].replace('\n', '<br>'), unsafe_allow_html=True)
 
 if __name__ == '__main__':
     main()
