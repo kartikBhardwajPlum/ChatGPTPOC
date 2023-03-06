@@ -12,7 +12,7 @@ def main():
     st.markdown("Ask a question about your policy.")
     st.write("Here are some prompts:")
     st.markdown("`* What is my maternity coverage?`")
-    st.markdown("`* How to file a claim?`")
+    st.markdown("`* How to file a claim in plum app?`")
     st.markdown("`* Do I have any waiting periods?`")
     st.markdown(">Tip: Assume you are new to insurance and plum, then ask questions about your coverages, or ask explanations of any terms and conditions. ")
     query = st.text_input("Enter your question")
