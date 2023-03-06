@@ -8,7 +8,7 @@ def api_call(query):
     return response.json()
 
 def main():
-    st.title("KUMAR OP ")
+    st.title("PIKU OP ")
     st.markdown("Ask a question about your policy.")
     st.write("Here are some prompts:")
     st.markdown("`* What is my maternity coverage?`")
